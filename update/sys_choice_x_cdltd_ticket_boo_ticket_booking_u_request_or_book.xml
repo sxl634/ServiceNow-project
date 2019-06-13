@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="u_request_or_book" table="x_cdltd_ticket_boo_ticket_booking" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_request_or_book</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Request</label>
+            <language>en</language>
+            <name>x_cdltd_ticket_boo_ticket_booking</name>
+            <sequence>0</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-06-13 15:41:37</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>bb28e28d958233007f44b96ce93f9041</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-06-13 15:41:37</sys_updated_on>
+            <value>request</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_request_or_book</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Book</label>
+            <language>en</language>
+            <name>x_cdltd_ticket_boo_ticket_booking</name>
+            <sequence>1</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-06-13 15:41:37</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3b28e28d958233007f44b96ce93f9043</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-06-13 15:41:37</sys_updated_on>
+            <value>book</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>u_request_or_book</element>
+            <name>x_cdltd_ticket_boo_ticket_booking</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-06-13 15:41:37</sys_created_on>
+            <sys_id>f328e28d958233007f44b96ce93f9042</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>u_request_or_book</sys_name>
+            <sys_package display_value="Ticket Booking" source="x_cdltd_ticket_boo">bc2559c9950233007f44b96ce93f90bc</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Ticket Booking">bc2559c9950233007f44b96ce93f90bc</sys_scope>
+            <sys_update_name>sys_choice_x_cdltd_ticket_boo_ticket_booking_u_request_or_book</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-06-13 15:41:37</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>
