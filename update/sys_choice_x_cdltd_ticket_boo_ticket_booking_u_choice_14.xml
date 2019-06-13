@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="u_choice_14" table="x_cdltd_ticket_boo_ticket_booking" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_choice_14</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>16-25 Railcard</label>
+            <language>en</language>
+            <name>x_cdltd_ticket_boo_ticket_booking</name>
+            <sequence>0</sequence>
+            <sys_created_by>gah403</sys_created_by>
+            <sys_created_on>2019-06-13 10:43:31</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>19f3e981954233007f44b96ce93f9005</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>gah403</sys_updated_by>
+            <sys_updated_on>2019-06-13 10:43:31</sys_updated_on>
+            <value>16-25 railcard</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_choice_14</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>26-30 Railcard</label>
+            <language>en</language>
+            <name>x_cdltd_ticket_boo_ticket_booking</name>
+            <sequence>1</sequence>
+            <sys_created_by>gah403</sys_created_by>
+            <sys_created_on>2019-06-13 10:43:31</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>95f3e981954233007f44b96ce93f9007</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>gah403</sys_updated_by>
+            <sys_updated_on>2019-06-13 10:43:31</sys_updated_on>
+            <value>26-30 railcard</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_choice_14</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Senior Railcard</label>
+            <language>en</language>
+            <name>x_cdltd_ticket_boo_ticket_booking</name>
+            <sequence>2</sequence>
+            <sys_created_by>gah403</sys_created_by>
+            <sys_created_on>2019-06-13 10:43:31</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>51f3e981954233007f44b96ce93f9009</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>gah403</sys_updated_by>
+            <sys_updated_on>2019-06-13 10:43:31</sys_updated_on>
+            <value>senior railcard</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_choice_14</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Family &amp; Friends Railcard</label>
+            <language>en</language>
+            <name>x_cdltd_ticket_boo_ticket_booking</name>
+            <sequence>3</sequence>
+            <sys_created_by>gah403</sys_created_by>
+            <sys_created_on>2019-06-13 10:43:31</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>1df3e981954233007f44b96ce93f900a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>gah403</sys_updated_by>
+            <sys_updated_on>2019-06-13 10:43:31</sys_updated_on>
+            <value>family &amp; friends railcard</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_choice_14</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Two Together Railcard</label>
+            <language>en</language>
+            <name>x_cdltd_ticket_boo_ticket_booking</name>
+            <sequence>4</sequence>
+            <sys_created_by>gah403</sys_created_by>
+            <sys_created_on>2019-06-13 10:43:31</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d5f3e981954233007f44b96ce93f900c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>gah403</sys_updated_by>
+            <sys_updated_on>2019-06-13 10:43:31</sys_updated_on>
+            <value>two together railcard</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_choice_14</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Network Railcard</label>
+            <language>en</language>
+            <name>x_cdltd_ticket_boo_ticket_booking</name>
+            <sequence>5</sequence>
+            <sys_created_by>gah403</sys_created_by>
+            <sys_created_on>2019-06-13 10:43:31</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>91f3e981954233007f44b96ce93f900e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>gah403</sys_updated_by>
+            <sys_updated_on>2019-06-13 10:43:31</sys_updated_on>
+            <value>network railcard</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_choice_14</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Disabled Persons Railcard</label>
+            <language>en</language>
+            <name>x_cdltd_ticket_boo_ticket_booking</name>
+            <sequence>6</sequence>
+            <sys_created_by>gah403</sys_created_by>
+            <sys_created_on>2019-06-13 10:43:31</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5df3e981954233007f44b96ce93f900f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>gah403</sys_updated_by>
+            <sys_updated_on>2019-06-13 10:43:31</sys_updated_on>
+            <value>disabled persons railcard</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>u_choice_14</element>
+            <name>x_cdltd_ticket_boo_ticket_booking</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>gah403</sys_created_by>
+            <sys_created_on>2019-06-13 10:43:31</sys_created_on>
+            <sys_id>51f3e981954233007f44b96ce93f9006</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>u_choice_14</sys_name>
+            <sys_package display_value="Ticket Booking" source="x_cdltd_ticket_boo">bc2559c9950233007f44b96ce93f90bc</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Ticket Booking">bc2559c9950233007f44b96ce93f90bc</sys_scope>
+            <sys_update_name>sys_choice_x_cdltd_ticket_boo_ticket_booking_u_choice_14</sys_update_name>
+            <sys_updated_by>gah403</sys_updated_by>
+            <sys_updated_on>2019-06-13 10:43:31</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

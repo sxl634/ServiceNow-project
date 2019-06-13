@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="task" label="Ticket Booking" max_length="40" name="x_cdltd_ticket_boo_ticket_booking" type="collection">
+        <element default="1" label="Adults" mandatory="true" max_length="40" name="adults" type="integer"/>
+        <element label="Children" max_length="40" name="children" type="integer"/>
+        <element label="Departure Station" mandatory="true" max_length="32" name="departure_station" reference="x_cdltd_ticket_boo_stations" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Departure Time" mandatory="true" max_length="40" name="departure_time" type="glide_date_time"/>
+        <element label="Destination Station" mandatory="true" max_length="32" name="destination_station" reference="x_cdltd_ticket_boo_stations" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Railcard Type" max_length="40" name="railcard_type" type="string">
+            <choice/>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Railcard Type" max_length="40" name="u_choice_14" type="string">
+            <choice>
+                <element inactive_on_update="false" label="16-25 Railcard" sequence="0" value="16-25 railcard"/>
+                <element inactive_on_update="false" label="26-30 Railcard" sequence="1" value="26-30 railcard"/>
+                <element inactive_on_update="false" label="Senior Railcard" sequence="2" value="senior railcard"/>
+                <element inactive_on_update="false" label="Family &amp; Friends Railcard" sequence="3" value="family &amp; friends railcard"/>
+                <element inactive_on_update="false" label="Two Together Railcard" sequence="4" value="two together railcard"/>
+                <element inactive_on_update="false" label="Network Railcard" sequence="5" value="network railcard"/>
+                <element inactive_on_update="false" label="Disabled Persons Railcard" sequence="6" value="disabled persons railcard"/>
+            </choice>
+        </element>
+        <element default="1" label="Adult" mandatory="true" max_length="40" name="u_integer_12" type="integer"/>
+        <element default="0" label="Children" max_length="40" name="u_integer_13" type="integer"/>
+        <element label="Requested For" mandatory="true" max_length="32" name="u_reference_15" reference="sys_user" type="reference"/>
+    </element>
+</database>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="station_name" label="Station name" language="en" table="x_cdltd_ticket_boo_stations">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>station_name</element>
+            <help/>
+            <hint/>
+            <label>Station name</label>
+            <language>en</language>
+            <name>x_cdltd_ticket_boo_stations</name>
+            <plural>Station names</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-06-13 10:09:48</sys_created_on>
+            <sys_id>5f3cdd8d950233007f44b96ce93f901f</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_name>Station name</sys_name>
+            <sys_package display_value="Ticket Booking" source="x_cdltd_ticket_boo">bc2559c9950233007f44b96ce93f90bc</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Ticket Booking">bc2559c9950233007f44b96ce93f90bc</sys_scope>
+            <sys_update_name>sys_documentation_x_cdltd_ticket_boo_stations_station_name_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-06-13 10:10:13</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

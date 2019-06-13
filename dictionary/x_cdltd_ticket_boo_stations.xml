@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Stations" max_length="40" name="x_cdltd_ticket_boo_stations" type="collection">
+        <element label="CRS code" max_length="400" name="crs_code" type="string"/>
+        <element display="true" label="Station name" max_length="400" name="station_name" type="string"/>
+        <index name="index">
+            <element name="crs_code"/>
+        </index>
+    </element>
+</database>

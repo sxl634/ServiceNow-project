@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="sys_import_set_row" label="Station Import File" max_length="40" name="x_cdltd_ticket_boo_station_import_file" type="collection">
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=CRS Code" label="CRS Code" max_length="40" name="u_crs_code" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Station Name" label="Station Name" max_length="40" name="u_station_name" type="string"/>
+    </element>
+</database>

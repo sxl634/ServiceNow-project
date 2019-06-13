@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="dcd12d41954233007f44b96ce93f90d4" sys_domain="global" table="x_cdltd_ticket_boo_ticket_booking" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>gah403</sys_created_by>
+            <sys_created_on>2019-06-13 10:34:10</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>14d12d41954233007f44b96ce93f90d7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_cdltd_ticket_boo_ticket_booking" name="x_cdltd_ticket_boo_ticket_booking" sys_domain="global" view="Default view">dcd12d41954233007f44b96ce93f90d4</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="x_cdltd_ticket_boo_ticket_booking" sys_domain="global" view="Default view">112c5d8d950233007f44b96ce93f9084</sys_ui_section>
+            <sys_updated_by>gah403</sys_updated_by>
+            <sys_updated_on>2019-06-13 10:34:10</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>gah403</sys_created_by>
+            <sys_created_on>2019-06-13 10:40:53</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>22532981954233007f44b96ce93f9022</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_cdltd_ticket_boo_ticket_booking" name="x_cdltd_ticket_boo_ticket_booking" sys_domain="global" view="Default view">dcd12d41954233007f44b96ce93f90d4</sys_ui_form>
+            <sys_ui_section caption="Passengers" display_value="Passengers" name="x_cdltd_ticket_boo_ticket_booking" sys_domain="global" view="Default view">66532981954233007f44b96ce93f9018</sys_ui_section>
+            <sys_updated_by>gah403</sys_updated_by>
+            <sys_updated_on>2019-06-13 10:40:53</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>2</position>
+            <sys_created_by>gah403</sys_created_by>
+            <sys_created_on>2019-06-13 10:43:31</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>89f3a981954233007f44b96ce93f90f0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_cdltd_ticket_boo_ticket_booking" name="x_cdltd_ticket_boo_ticket_booking" sys_domain="global" view="Default view">dcd12d41954233007f44b96ce93f90d4</sys_ui_form>
+            <sys_ui_section caption="Railcard" display_value="Railcard" name="x_cdltd_ticket_boo_ticket_booking" sys_domain="global" view="Default view">4df3a981954233007f44b96ce93f90c8</sys_ui_section>
+            <sys_updated_by>gah403</sys_updated_by>
+            <sys_updated_on>2019-06-13 10:43:31</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_cdltd_ticket_boo_ticket_booking</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>gah403</sys_created_by>
+            <sys_created_on>2019-06-13 10:34:10</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>dcd12d41954233007f44b96ce93f90d4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_cdltd_ticket_boo_ticket_booking</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Ticket Booking" source="x_cdltd_ticket_boo">bc2559c9950233007f44b96ce93f90bc</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Ticket Booking">bc2559c9950233007f44b96ce93f90bc</sys_scope>
+            <sys_update_name>sys_ui_form_sections_dcd12d41954233007f44b96ce93f90d4</sys_update_name>
+            <sys_updated_by>gah403</sys_updated_by>
+            <sys_updated_on>2019-06-13 10:34:10</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>
