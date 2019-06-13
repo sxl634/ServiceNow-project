@@ -8,6 +8,7 @@
         <element attributes="edge_encryption_enabled=true" choice="1" label="Railcard Type" max_length="40" name="railcard_type" type="string">
             <choice/>
         </element>
+        <element label="Apply Railcard" max_length="40" name="u_boolean_1" type="boolean"/>
         <element attributes="edge_encryption_enabled=true" choice="1" label="Railcard Type" max_length="40" name="u_choice_14" type="string">
             <choice>
                 <element inactive_on_update="false" label="16-25 Railcard" sequence="0" value="16-25 railcard"/>

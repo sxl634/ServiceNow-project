@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_ui_section caption="Railcard" section_id="4df3a981954233007f44b96ce93f90c8" sys_domain="global" table="x_cdltd_ticket_boo_ticket_booking" version="3" view="">
+    <sys_ui_section caption="Statistics" section_id="1eecb90d954233007f44b96ce93f900c" sys_domain="global" table="x_cdltd_ticket_boo_ticket_booking" version="3" view="">
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>u_boolean_1</element>
+            <element>opened_at</element>
             <position>0</position>
             <sys_created_by>gah403</sys_created_by>
-            <sys_created_on>2019-06-13 11:02:08</sys_created_on>
-            <sys_id>46382545954233007f44b96ce93f90d2</sys_id>
+            <sys_created_on>2019-06-13 12:32:33</sys_created_on>
+            <sys_id>92ecb90d954233007f44b96ce93f901c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="Railcard" display_value="Railcard" name="x_cdltd_ticket_boo_ticket_booking" sys_domain="global" view="Default view">4df3a981954233007f44b96ce93f90c8</sys_ui_section>
+            <sys_ui_section caption="Statistics" display_value="Statistics" name="x_cdltd_ticket_boo_ticket_booking" sys_domain="global" view="Default view">1eecb90d954233007f44b96ce93f900c</sys_ui_section>
             <sys_updated_by>gah403</sys_updated_by>
-            <sys_updated_on>2019-06-13 11:02:08</sys_updated_on>
+            <sys_updated_on>2019-06-13 12:32:33</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -18,50 +18,50 @@
             <element>.split</element>
             <position>1</position>
             <sys_created_by>gah403</sys_created_by>
-            <sys_created_on>2019-06-13 11:02:08</sys_created_on>
-            <sys_id>c6382545954233007f44b96ce93f90d2</sys_id>
+            <sys_created_on>2019-06-13 12:32:33</sys_created_on>
+            <sys_id>1aecb90d954233007f44b96ce93f901c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="Railcard" display_value="Railcard" name="x_cdltd_ticket_boo_ticket_booking" sys_domain="global" view="Default view">4df3a981954233007f44b96ce93f90c8</sys_ui_section>
+            <sys_ui_section caption="Statistics" display_value="Statistics" name="x_cdltd_ticket_boo_ticket_booking" sys_domain="global" view="Default view">1eecb90d954233007f44b96ce93f900c</sys_ui_section>
             <sys_updated_by>gah403</sys_updated_by>
-            <sys_updated_on>2019-06-13 11:02:08</sys_updated_on>
+            <sys_updated_on>2019-06-13 12:32:33</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>u_choice_14</element>
+            <element>opened_by</element>
             <position>2</position>
             <sys_created_by>gah403</sys_created_by>
-            <sys_created_on>2019-06-13 11:02:08</sys_created_on>
-            <sys_id>4a382545954233007f44b96ce93f90d2</sys_id>
+            <sys_created_on>2019-06-13 12:32:33</sys_created_on>
+            <sys_id>9aecb90d954233007f44b96ce93f901c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="Railcard" display_value="Railcard" name="x_cdltd_ticket_boo_ticket_booking" sys_domain="global" view="Default view">4df3a981954233007f44b96ce93f90c8</sys_ui_section>
+            <sys_ui_section caption="Statistics" display_value="Statistics" name="x_cdltd_ticket_boo_ticket_booking" sys_domain="global" view="Default view">1eecb90d954233007f44b96ce93f900c</sys_ui_section>
             <sys_updated_by>gah403</sys_updated_by>
-            <sys_updated_on>2019-06-13 11:02:08</sys_updated_on>
+            <sys_updated_on>2019-06-13 12:32:33</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_section action="INSERT_OR_UPDATE">
-            <caption>Railcard</caption>
+            <caption>Statistics</caption>
             <header>false</header>
             <name>x_cdltd_ticket_boo_ticket_booking</name>
             <roles/>
             <sys_class_name>sys_ui_section</sys_class_name>
             <sys_created_by>gah403</sys_created_by>
-            <sys_created_on>2019-06-13 10:43:31</sys_created_on>
+            <sys_created_on>2019-06-13 12:32:32</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>4df3a981954233007f44b96ce93f90c8</sys_id>
+            <sys_id>1eecb90d954233007f44b96ce93f900c</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_name>Railcard</sys_name>
+            <sys_name>Statistics</sys_name>
             <sys_overrides/>
             <sys_package display_value="Ticket Booking" source="x_cdltd_ticket_boo">bc2559c9950233007f44b96ce93f90bc</sys_package>
             <sys_policy/>
             <sys_scope display_value="Ticket Booking">bc2559c9950233007f44b96ce93f90bc</sys_scope>
-            <sys_update_name>sys_ui_section_4df3a981954233007f44b96ce93f90c8</sys_update_name>
+            <sys_update_name>sys_ui_section_1eecb90d954233007f44b96ce93f900c</sys_update_name>
             <sys_updated_by>gah403</sys_updated_by>
-            <sys_updated_on>2019-06-13 10:43:31</sys_updated_on>
+            <sys_updated_on>2019-06-13 12:32:32</sys_updated_on>
             <sys_user/>
             <title>false</title>
             <view display_value="Default view" name="NULL">Default view</view>

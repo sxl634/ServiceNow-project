@@ -4,27 +4,41 @@
             <element>u_integer_12</element>
             <position>0</position>
             <sys_created_by>gah403</sys_created_by>
-            <sys_created_on>2019-06-13 10:40:53</sys_created_on>
-            <sys_id>fa532981954233007f44b96ce93f904f</sys_id>
+            <sys_created_on>2019-06-13 11:03:33</sys_created_on>
+            <sys_id>3688e545954233007f44b96ce93f90b3</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Passengers" display_value="Passengers" name="x_cdltd_ticket_boo_ticket_booking" sys_domain="global" view="Default view">66532981954233007f44b96ce93f9018</sys_ui_section>
             <sys_updated_by>gah403</sys_updated_by>
-            <sys_updated_on>2019-06-13 10:40:53</sys_updated_on>
+            <sys_updated_on>2019-06-13 11:03:33</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>u_integer_13</element>
+            <element>.split</element>
             <position>1</position>
             <sys_created_by>gah403</sys_created_by>
-            <sys_created_on>2019-06-13 10:40:53</sys_created_on>
-            <sys_id>7e532981954233007f44b96ce93f904f</sys_id>
+            <sys_created_on>2019-06-13 11:03:33</sys_created_on>
+            <sys_id>b688e545954233007f44b96ce93f90b3</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Passengers" display_value="Passengers" name="x_cdltd_ticket_boo_ticket_booking" sys_domain="global" view="Default view">66532981954233007f44b96ce93f9018</sys_ui_section>
             <sys_updated_by>gah403</sys_updated_by>
-            <sys_updated_on>2019-06-13 10:40:53</sys_updated_on>
+            <sys_updated_on>2019-06-13 11:03:33</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_integer_13</element>
+            <position>2</position>
+            <sys_created_by>gah403</sys_created_by>
+            <sys_created_on>2019-06-13 11:03:33</sys_created_on>
+            <sys_id>3a88e545954233007f44b96ce93f90b3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Passengers" display_value="Passengers" name="x_cdltd_ticket_boo_ticket_booking" sys_domain="global" view="Default view">66532981954233007f44b96ce93f9018</sys_ui_section>
+            <sys_updated_by>gah403</sys_updated_by>
+            <sys_updated_on>2019-06-13 11:03:33</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
