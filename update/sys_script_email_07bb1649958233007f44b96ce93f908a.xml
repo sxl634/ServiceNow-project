@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_email">
+    <sys_script_email action="INSERT_OR_UPDATE">
+        <name>x_cdltd_ticket_boo_ticket_booking_script_1</name>
+        <new_lines_to_html>false</new_lines_to_html>
+        <script><![CDATA[try { 
+ var r = new sn_ws.RESTMessageV2('x_cdltd_ticket_boo.Get tickets', 'Default GET');
+
+ var departureStationCode = current.departure_station.crs_code;
+ var destinationStationCode = current.destination_station.crs_code;
+
+ r.setStringParameterNoEscape('orig', departureStationCode);
+ r.setStringParameterNoEscape('dest', destinationStationCode);
+ r.setStringParameterNoEscape('rlc', 'YNG');
+//override authentication profile 
+//authentication type ='basic'/ 'oauth2'
+//r.setAuthenticationProfile(authentication type, profile name);
+//set a MID server name if one wants to run the message on MID
+//r.setMIDServer('MY_MID_SERVER');
+//if the message is configured to communicate through ECC queue, either
+//by setting a MID server or calling executeAsync, one needs to set skip_sensor
+//to true. Otherwise, one may get an intermittent error that the response body is null
+//r.setEccParameter('skip_sensor', true);
+ var response = r.execute();
+ var responseBody = response.getBody();
+ var httpStatus = response.getStatusCode();
+}
+catch(ex) {
+ var message = ex.message;
+}
+
+var x = JSON.parse(responseBody);
+var i =0;
+var min = 9007199254740992;
+var temp = 0;
+
+for(i = 0; i < x.fares.length; i++) {
+	if(typeof x.fares[i].adult.fare !== 'undefined') {
+		temp = x.fares[i].adult.fare;
+		if(temp < min ) {
+			min = temp;
+		}
+	}
+}
+
+var departureStation = current.departure_station.station_name;
+var destinationStation = current.destination_station.station_name;
+
+template.print("The minimum price found for a ticket from " + departureStation + " to " + destinationStation + " is: £" + min/100.0);]]></script>
+        <sys_class_name>sys_script_email</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-06-13 14:47:13</sys_created_on>
+        <sys_id>07bb1649958233007f44b96ce93f908a</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name>x_cdltd_ticket_boo_ticket_booking_script_1</sys_name>
+        <sys_package display_value="Ticket Booking" source="x_cdltd_ticket_boo">bc2559c9950233007f44b96ce93f90bc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Ticket Booking">bc2559c9950233007f44b96ce93f90bc</sys_scope>
+        <sys_update_name>sys_script_email_07bb1649958233007f44b96ce93f908a</sys_update_name>
+        <sys_updated_by>gah403</sys_updated_by>
+        <sys_updated_on>2019-06-13 15:34:04</sys_updated_on>
+    </sys_script_email>
+</record_update>

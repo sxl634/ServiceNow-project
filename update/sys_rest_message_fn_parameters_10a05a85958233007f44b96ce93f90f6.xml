@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn_parameters">
+    <sys_rest_message_fn_parameters action="INSERT_OR_UPDATE">
+        <name>orig</name>
+        <rest_message_function display_value="Default GET">b3ceca45958233007f44b96ce93f9071</rest_message_function>
+        <sys_class_name>sys_rest_message_fn_parameters</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-06-13 13:59:06</sys_created_on>
+        <sys_id>10a05a85958233007f44b96ce93f90f6</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>orig</sys_name>
+        <sys_package display_value="Ticket Booking" source="x_cdltd_ticket_boo">bc2559c9950233007f44b96ce93f90bc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Ticket Booking">bc2559c9950233007f44b96ce93f90bc</sys_scope>
+        <sys_update_name>sys_rest_message_fn_parameters_10a05a85958233007f44b96ce93f90f6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-06-13 14:00:16</sys_updated_on>
+        <type>string</type>
+        <value>LDS</value>
+    </sys_rest_message_fn_parameters>
+</record_update>
