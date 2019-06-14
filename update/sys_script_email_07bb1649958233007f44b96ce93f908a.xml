@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_email">
     <sys_script_email action="INSERT_OR_UPDATE">
         <name>x_cdltd_ticket_boo_ticket_booking_script_1</name>
-        <new_lines_to_html>false</new_lines_to_html>
+        <new_lines_to_html>true</new_lines_to_html>
         <script><![CDATA[try { 
  var r = new sn_ws.RESTMessageV2('x_cdltd_ticket_boo.Get tickets', 'Default GET');
 
  var departureStationCode = current.departure_station.crs_code;
  var destinationStationCode = current.destination_station.crs_code;
+ var railcardType = current.u_choice_1;
 
  r.setStringParameterNoEscape('orig', departureStationCode);
  r.setStringParameterNoEscape('dest', destinationStationCode);
- r.setStringParameterNoEscape('rlc', 'YNG');
+ r.setStringParameterNoEscape('rlc', railcardType);
 //override authentication profile 
 //authentication type ='basic'/ 'oauth2'
 //r.setAuthenticationProfile(authentication type, profile name);
@@ -30,14 +31,47 @@ catch(ex) {
 
 var x = JSON.parse(responseBody);
 var i =0;
-var min = 9007199254740992;
-var temp = 0;
+var minAdult = 9007199254740992;
+var minChild = 9007199254740992;
+var tempAdult = 0;
+var tempChild = 0;
 
-for(i = 0; i < x.fares.length; i++) {
-	if(typeof x.fares[i].adult.fare !== 'undefined') {
-		temp = x.fares[i].adult.fare;
-		if(temp < min ) {
-			min = temp;
+var isReturn = current.u_return;
+
+if(isReturn) {
+	for(i=0; i<x.fares.length; i++) {	
+		if(x.fares[i].ticket.type.code == '1') {
+			if(typeof x.fares[i].adult.fare !== 'undefined') {
+				tempAdult = x.fares[i].adult.fare;
+				if(tempAdult < minAdult) {
+					minAdult = tempAdult;
+				}
+			}
+
+			if(typeof x.fares[i].child.fare !== 'undefined') {
+				tempChild = x.fares[i].child.fare;
+				if(tempChild < minChild) {
+					minChild = tempChild;
+				}
+			}
+		}
+	}
+}
+
+else {
+	for(i = 0; i < x.fares.length; i++) {
+		if(typeof x.fares[i].adult.fare !== 'undefined') {
+			tempAdult = x.fares[i].adult.fare;
+			if(tempAdult < minAdult) {
+				minAdult = tempAdult;
+			}
+		}
+
+		if(typeof x.fares[i].child.fare !== 'undefined') {
+			tempChild = x.fares[i].child.fare;
+			if(tempChild < minChild) {
+				minChild = tempChild;
+			}
 		}
 	}
 }
@@ -45,18 +79,31 @@ for(i = 0; i < x.fares.length; i++) {
 var departureStation = current.departure_station.station_name;
 var destinationStation = current.destination_station.station_name;
 
-template.print("The minimum price found for a ticket from " + departureStation + " to " + destinationStation + " is: £" + min/100.0);]]></script>
+var numAdults = current.u_integer_12;
+var numChildren = current.u_integer_13;
+
+template.print("The minimum price found for an adult ticket from " + departureStation + " to " + destinationStation + " is: £" + minAdult/100.0);
+template.print("<br />");
+if(numChildren > 0) {
+	template.print("The minimum price found for a child ticket from " + departureStation + " to " + destinationStation + " is: £" + minChild/100.0);
+}
+template.print("<br />");
+template.print("<br />");
+
+var totalPrice = ((minAdult * numAdults)/100.0) + ((minChild * numChildren)/100.0);
+
+template.print("The cheapest total cost for all the requested ticket(s) is: £" + totalPrice);]]></script>
         <sys_class_name>sys_script_email</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2019-06-13 14:47:13</sys_created_on>
         <sys_id>07bb1649958233007f44b96ce93f908a</sys_id>
-        <sys_mod_count>12</sys_mod_count>
+        <sys_mod_count>24</sys_mod_count>
         <sys_name>x_cdltd_ticket_boo_ticket_booking_script_1</sys_name>
         <sys_package display_value="Ticket Booking" source="x_cdltd_ticket_boo">bc2559c9950233007f44b96ce93f90bc</sys_package>
         <sys_policy/>
         <sys_scope display_value="Ticket Booking">bc2559c9950233007f44b96ce93f90bc</sys_scope>
         <sys_update_name>sys_script_email_07bb1649958233007f44b96ce93f908a</sys_update_name>
         <sys_updated_by>gah403</sys_updated_by>
-        <sys_updated_on>2019-06-13 15:34:04</sys_updated_on>
+        <sys_updated_on>2019-06-14 11:43:15</sys_updated_on>
     </sys_script_email>
 </record_update>

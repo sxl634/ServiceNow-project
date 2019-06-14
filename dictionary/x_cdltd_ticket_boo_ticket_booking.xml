@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element extends="task" label="Ticket Booking" max_length="40" name="x_cdltd_ticket_boo_ticket_booking" type="collection">
+    <element extends="task" label="Ticket Booking" max_length="40" name="x_cdltd_ticket_boo_ticket_booking" sizeclass="13" type="collection">
         <element default="1" label="Adults" mandatory="true" max_length="40" name="adults" type="integer"/>
         <element label="Children" max_length="40" name="children" type="integer"/>
         <element label="Departure Station" mandatory="true" max_length="32" name="departure_station" reference="x_cdltd_ticket_boo_stations" type="reference"/>
@@ -8,12 +8,24 @@
         <element attributes="edge_encryption_enabled=true" choice="1" label="Railcard Type" max_length="40" name="railcard_type" type="string">
             <choice/>
         </element>
+        <element label="Return" max_length="40" name="return" type="boolean"/>
         <element label="Apply Railcard" max_length="40" name="u_boolean_1" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Railcard Type" max_length="40" name="u_choice_1" type="string">
+            <choice>
+                <element inactive_on_update="false" label="16-25 railcard" sequence="0" value="YNG"/>
+                <element inactive="true" inactive_on_update="true" label="Choice 3" sequence="0" value="Choice 3"/>
+                <element inactive_on_update="false" label="26-30 railcard" sequence="1" value="TST"/>
+                <element inactive_on_update="false" label="Senior railcard" sequence="2" value="SRN"/>
+                <element inactive_on_update="false" label="Family &amp; Friends railcard" sequence="3" value="FAM"/>
+                <element inactive_on_update="false" label="Two Together railcard" sequence="4" value="2TR"/>
+                <element inactive_on_update="false" label="Disabled Adult railcard" sequence="5" value="DIS"/>
+            </choice>
+        </element>
         <element attributes="edge_encryption_enabled=true" choice="1" label="Railcard Type" max_length="40" name="u_choice_14" type="string">
             <choice>
-                <element inactive_on_update="false" label="16-25 Railcard" sequence="0" value="16-25 railcard"/>
+                <element inactive_on_update="false" label="26-30 Railcard" sequence="0" value="26-30 railcard"/>
                 <element inactive="true" inactive_on_update="true" label="Network Railcard" sequence="0" value="network railcard"/>
-                <element inactive_on_update="false" label="26-30 Railcard" sequence="1" value="26-30 railcard"/>
+                <element inactive_on_update="false" label="16-25 Railcard" sequence="1" value="16-25 railcard"/>
                 <element inactive="true" inactive_on_update="true" label="Disabled Persons Railcard" sequence="1" value="disabled persons railcard"/>
                 <element inactive_on_update="false" label="Senior Railcard" sequence="2" value="senior railcard"/>
                 <element inactive_on_update="false" label="Family &amp; Friends Railcard" sequence="3" value="family &amp; friends railcard"/>
@@ -21,14 +33,15 @@
                 <element inactive_on_update="false" label="Disabled Adult Railcard" sequence="5" value="DIS"/>
             </choice>
         </element>
-        <element default="1" label="Adult" mandatory="true" max_length="40" name="u_integer_12" type="integer"/>
+        <element default="1" label="Adults" mandatory="true" max_length="40" name="u_integer_12" type="integer"/>
         <element default="0" label="Children" max_length="40" name="u_integer_13" type="integer"/>
         <element label="Requested For" mandatory="true" max_length="32" name="u_reference_15" reference="sys_user" type="reference"/>
         <element attributes="edge_encryption_enabled=true" choice="3" default="request" label="Request or Book" mandatory="true" max_length="40" name="u_request_or_book" type="string">
             <choice>
-                <element inactive_on_update="false" label="Request" sequence="0" value="request"/>
-                <element inactive_on_update="false" label="Book" sequence="1" value="book"/>
+                <element inactive_on_update="false" label="Request cheapest ticket pricing" sequence="0" value="request"/>
+                <element inactive_on_update="false" label="Book cheapest ticket" sequence="1" value="book"/>
             </choice>
         </element>
+        <element label="Return" max_length="40" name="u_return" type="boolean"/>
     </element>
 </database>

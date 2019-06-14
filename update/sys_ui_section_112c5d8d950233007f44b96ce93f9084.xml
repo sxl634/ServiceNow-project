@@ -4,13 +4,13 @@
             <element>number</element>
             <position>0</position>
             <sys_created_by>gah403</sys_created_by>
-            <sys_created_on>2019-06-13 10:49:35</sys_created_on>
-            <sys_id>5255a5c1954233007f44b96ce93f90a4</sys_id>
+            <sys_created_on>2019-06-14 11:04:31</sys_created_on>
+            <sys_id>a2527a9995c633007f44b96ce93f90e9</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_cdltd_ticket_boo_ticket_booking" sys_domain="global" view="Default view">112c5d8d950233007f44b96ce93f9084</sys_ui_section>
             <sys_updated_by>gah403</sys_updated_by>
-            <sys_updated_on>2019-06-13 10:49:35</sys_updated_on>
+            <sys_updated_on>2019-06-14 11:04:31</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -18,13 +18,13 @@
             <element>departure_station</element>
             <position>1</position>
             <sys_created_by>gah403</sys_created_by>
-            <sys_created_on>2019-06-13 10:49:35</sys_created_on>
-            <sys_id>d255a5c1954233007f44b96ce93f90a4</sys_id>
+            <sys_created_on>2019-06-14 11:04:31</sys_created_on>
+            <sys_id>2a527a9995c633007f44b96ce93f90e9</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_cdltd_ticket_boo_ticket_booking" sys_domain="global" view="Default view">112c5d8d950233007f44b96ce93f9084</sys_ui_section>
             <sys_updated_by>gah403</sys_updated_by>
-            <sys_updated_on>2019-06-13 10:49:35</sys_updated_on>
+            <sys_updated_on>2019-06-14 11:04:31</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -32,69 +32,83 @@
             <element>destination_station</element>
             <position>2</position>
             <sys_created_by>gah403</sys_created_by>
-            <sys_created_on>2019-06-13 10:49:35</sys_created_on>
-            <sys_id>5655a5c1954233007f44b96ce93f90a4</sys_id>
+            <sys_created_on>2019-06-14 11:04:31</sys_created_on>
+            <sys_id>aa527a9995c633007f44b96ce93f90e9</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_cdltd_ticket_boo_ticket_booking" sys_domain="global" view="Default view">112c5d8d950233007f44b96ce93f9084</sys_ui_section>
             <sys_updated_by>gah403</sys_updated_by>
-            <sys_updated_on>2019-06-13 10:49:35</sys_updated_on>
+            <sys_updated_on>2019-06-14 11:04:31</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_return</element>
+            <position>3</position>
+            <sys_created_by>gah403</sys_created_by>
+            <sys_created_on>2019-06-14 11:04:31</sys_created_on>
+            <sys_id>2e527a9995c633007f44b96ce93f90e9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_cdltd_ticket_boo_ticket_booking" sys_domain="global" view="Default view">112c5d8d950233007f44b96ce93f9084</sys_ui_section>
+            <sys_updated_by>gah403</sys_updated_by>
+            <sys_updated_on>2019-06-14 11:04:31</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.split</element>
-            <position>3</position>
+            <position>4</position>
             <sys_created_by>gah403</sys_created_by>
-            <sys_created_on>2019-06-13 10:49:35</sys_created_on>
-            <sys_id>d655a5c1954233007f44b96ce93f90a4</sys_id>
+            <sys_created_on>2019-06-14 11:04:31</sys_created_on>
+            <sys_id>ae527a9995c633007f44b96ce93f90e9</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_cdltd_ticket_boo_ticket_booking" sys_domain="global" view="Default view">112c5d8d950233007f44b96ce93f9084</sys_ui_section>
             <sys_updated_by>gah403</sys_updated_by>
-            <sys_updated_on>2019-06-13 10:49:35</sys_updated_on>
+            <sys_updated_on>2019-06-14 11:04:31</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>state</element>
-            <position>4</position>
+            <position>5</position>
             <sys_created_by>gah403</sys_created_by>
-            <sys_created_on>2019-06-13 10:49:35</sys_created_on>
-            <sys_id>5a55a5c1954233007f44b96ce93f90a4</sys_id>
+            <sys_created_on>2019-06-14 11:04:31</sys_created_on>
+            <sys_id>22527a9995c633007f44b96ce93f90ea</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_cdltd_ticket_boo_ticket_booking" sys_domain="global" view="Default view">112c5d8d950233007f44b96ce93f9084</sys_ui_section>
             <sys_updated_by>gah403</sys_updated_by>
-            <sys_updated_on>2019-06-13 10:49:35</sys_updated_on>
+            <sys_updated_on>2019-06-14 11:04:31</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>departure_time</element>
-            <position>5</position>
+            <position>6</position>
             <sys_created_by>gah403</sys_created_by>
-            <sys_created_on>2019-06-13 10:49:35</sys_created_on>
-            <sys_id>da55a5c1954233007f44b96ce93f90a4</sys_id>
+            <sys_created_on>2019-06-14 11:04:31</sys_created_on>
+            <sys_id>a2527a9995c633007f44b96ce93f90ea</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_cdltd_ticket_boo_ticket_booking" sys_domain="global" view="Default view">112c5d8d950233007f44b96ce93f9084</sys_ui_section>
             <sys_updated_by>gah403</sys_updated_by>
-            <sys_updated_on>2019-06-13 10:49:35</sys_updated_on>
+            <sys_updated_on>2019-06-14 11:04:31</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_reference_15</element>
-            <position>6</position>
+            <position>7</position>
             <sys_created_by>gah403</sys_created_by>
-            <sys_created_on>2019-06-13 10:49:35</sys_created_on>
-            <sys_id>5e55a5c1954233007f44b96ce93f90a4</sys_id>
+            <sys_created_on>2019-06-14 11:04:31</sys_created_on>
+            <sys_id>26527a9995c633007f44b96ce93f90ea</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_cdltd_ticket_boo_ticket_booking" sys_domain="global" view="Default view">112c5d8d950233007f44b96ce93f9084</sys_ui_section>
             <sys_updated_by>gah403</sys_updated_by>
-            <sys_updated_on>2019-06-13 10:49:35</sys_updated_on>
+            <sys_updated_on>2019-06-14 11:04:31</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

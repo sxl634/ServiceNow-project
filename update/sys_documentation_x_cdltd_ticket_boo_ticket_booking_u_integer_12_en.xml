@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_documentation element="u_integer_12" label="Adult" language="en" table="x_cdltd_ticket_boo_ticket_booking">
+    <sys_documentation element="u_integer_12" label="Adults" language="en" table="x_cdltd_ticket_boo_ticket_booking">
         <sys_documentation action="INSERT_OR_UPDATE">
             <element>u_integer_12</element>
             <help/>
             <hint/>
-            <label>Adult</label>
+            <label>Adults</label>
             <language>en</language>
             <name>x_cdltd_ticket_boo_ticket_booking</name>
             <plural>Adults</plural>
@@ -12,14 +12,14 @@
             <sys_created_by>gah403</sys_created_by>
             <sys_created_on>2019-06-13 10:40:53</sys_created_on>
             <sys_id>ee532981954233007f44b96ce93f902b</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_name>Adult</sys_name>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_name>Adults</sys_name>
             <sys_package display_value="Ticket Booking" source="x_cdltd_ticket_boo">bc2559c9950233007f44b96ce93f90bc</sys_package>
             <sys_policy/>
             <sys_scope display_value="Ticket Booking">bc2559c9950233007f44b96ce93f90bc</sys_scope>
             <sys_update_name>sys_documentation_x_cdltd_ticket_boo_ticket_booking_u_integer_12_en</sys_update_name>
-            <sys_updated_by>gah403</sys_updated_by>
-            <sys_updated_on>2019-06-13 10:40:53</sys_updated_on>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-06-14 08:43:57</sys_updated_on>
             <url/>
             <url_target/>
         </sys_documentation>

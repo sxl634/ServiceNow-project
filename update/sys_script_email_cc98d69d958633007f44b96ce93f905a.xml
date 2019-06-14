@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_email">
+    <sys_script_email action="INSERT_OR_UPDATE">
+        <name>x_cdltd_ticket_boo_ticket_booking_script_2</name>
+        <new_lines_to_html>true</new_lines_to_html>
+        <script><![CDATA[try { 
+ var r = new sn_ws.RESTMessageV2('x_cdltd_ticket_boo.Get tickets', 'Default GET');
+ 
+ var departureStationCode = current.departure_station.crs_code;
+ var destinationStationCode = current.destination_station.crs_code;
+ var railcardType = current.u_choice_1;
+
+ r.setStringParameterNoEscape('orig', departureStationCode);
+ r.setStringParameterNoEscape('dest', destinationStationCode);
+ r.setStringParameterNoEscape('rlc', railcardType);
+//override authentication profile 
+//authentication type ='basic'/ 'oauth2'
+//r.setAuthenticationProfile(authentication type, profile name);
+//set a MID server name if one wants to run the message on MID
+//r.setMIDServer('MY_MID_SERVER');
+//if the message is configured to communicate through ECC queue, either
+//by setting a MID server or calling executeAsync, one needs to set skip_sensor
+//to true. Otherwise, one may get an intermittent error that the response body is null
+//r.setEccParameter('skip_sensor', true);
+ var response = r.execute();
+ var responseBody = response.getBody();
+ var httpStatus = response.getStatusCode();
+}
+catch(ex) {
+ var message = ex.message;
+}
+
+var x = JSON.parse(responseBody);
+
+var i =0;
+var minAdult = 9007199254740992;
+var minChild = 9007199254740992;
+var tempAdult = 0;
+var tempChild = 0;
+
+var isReturn = current.u_return;
+
+if(isReturn) {
+	for(i=0; i<x.fares.length; i++) {	
+		if(x.fares[i].ticket.type.code == '1') {
+			if(typeof x.fares[i].adult.fare !== 'undefined') {
+				tempAdult = x.fares[i].adult.fare;
+				if(tempAdult < minAdult) {
+					minAdult = tempAdult;
+				}
+			}
+
+			if(typeof x.fares[i].child.fare !== 'undefined') {
+				tempChild = x.fares[i].child.fare;
+				if(tempChild < minChild) {
+					minChild = tempChild;
+				}
+			}
+		}
+	}
+}
+
+else {
+	for(i = 0; i < x.fares.length; i++) {
+		if(typeof x.fares[i].adult.fare !== 'undefined') {
+			tempAdult = x.fares[i].adult.fare;
+			if(tempAdult < minAdult) {
+				minAdult = tempAdult;
+			}
+		}
+
+		if(typeof x.fares[i].child.fare !== 'undefined') {
+			tempChild = x.fares[i].child.fare;
+			if(tempChild < minChild) {
+				minChild = tempChild;
+			}
+		}
+	}
+}
+
+var departureStation = current.departure_station.station_name;
+var destinationStation = current.destination_station.station_name;
+
+var numAdults = current.u_integer_12;
+var numChildren = current.u_integer_13;
+
+var totalAdults = ((minAdult * numAdults)/100.0);
+var totalChildren = ((minChild * numChildren)/100.0);
+
+var totalPrice = totalAdults + totalChildren;
+
+template.print("<br />");
+template.print("<br />");
+template.print("Price breakdown:");
+template.print("<br />");
+template.print("Total cost for adult ticket(s): " + numAdults + " x " + minAdult/100.0 + " = " + totalAdults);
+template.print("<br />");
+if(numChildren > 0) {
+	template.print("Total cost for child ticket(s): " + numChildren + " x " + minChild/100.0 + " = " + totalChildren);
+}
+template.print("<br />");
+template.print("<br />");
+template.print("The total costs for the ticket(s) will be: &pound;" + totalPrice);
+template.print("<br />");
+template.print("<br />");
+template.print("<br />");
+template.print("Please pick the ticket(s) up from your nearest train station!");]]></script>
+        <sys_class_name>sys_script_email</sys_class_name>
+        <sys_created_by>gah403</sys_created_by>
+        <sys_created_on>2019-06-14 09:11:51</sys_created_on>
+        <sys_id>cc98d69d958633007f44b96ce93f905a</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name>x_cdltd_ticket_boo_ticket_booking_script_2</sys_name>
+        <sys_package display_value="Ticket Booking" source="x_cdltd_ticket_boo">bc2559c9950233007f44b96ce93f90bc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Ticket Booking">bc2559c9950233007f44b96ce93f90bc</sys_scope>
+        <sys_update_name>sys_script_email_cc98d69d958633007f44b96ce93f905a</sys_update_name>
+        <sys_updated_by>gah403</sys_updated_by>
+        <sys_updated_on>2019-06-14 11:44:34</sys_updated_on>
+    </sys_script_email>
+</record_update>
